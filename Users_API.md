@@ -135,7 +135,7 @@
 ```
 
 
-#### <span id="userscreate"> POST /users/userscreate </span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+#### <span id="userscreate"> POST /users/create </span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 
 
 创建新用户，根据传入的参数创建新用户，成功则返回用户注册并登录后信息。失败返回相应错误信息。
@@ -152,8 +152,8 @@
 |usertype|**optional**|用户分类|默认为普通用户,机构用户传入字段值为’org'|
 |regurl|**optional**|用户注册来源页面url||
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:||
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -220,8 +220,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |mobile|**required**| 用户注册的手机号||
 |newpassword |**optional**|新密码||
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:||
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |message|错误信息|修改密码失败时才返回|
 |field|错误字段|修改密码失败时才返回|
 
@@ -251,8 +251,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |wx_headimgurl|**condtional**|微信登录用户的微信头像|微信登录时同时传入用户名,密码,微信openid,且微信未绑定时则绑定该微信信息
 |wx_sex|**condtional**|微信登录用户的微信性别|微信登录时同时传入用户名,密码,微信openid,且微信未绑定时则绑定该微信信息
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:||
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -306,8 +306,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |state|**optional**|回调函数验证码||
 
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:||
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |focus| 关注领域|操作成功时才返回|
@@ -358,8 +358,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |state|**optional**|回调函数验证码||
 
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:||
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |focus| 关注领域|操作成功时才返回|
@@ -454,8 +454,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |state|**optional**|回调函数验证码||
 
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:||
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -534,8 +534,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |linkin |**optional**|   linkedin账号||
 |blog_url |**optional**|   微博账号||
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:||
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -592,8 +592,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |card_no |**optional**|   法人身份证号||
 |auth_error |**optional**|   机构审核错误信息||
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:||
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -643,8 +643,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |newpassword |**optional**|新密码||
 |oldpassword |**optional**|原密码||
 
-|返回data参数说明| 说明|备注| 
-|:-----------|:-----------:|
+|返回data参数说明|说明|备注| 
+|:-----------|:-----------:|:-----------|
 |message|错误信息|修改密码失败时才返回|
 |field|错误字段|修改密码失败时才返回|
 

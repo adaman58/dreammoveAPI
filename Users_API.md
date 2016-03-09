@@ -239,8 +239,8 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 提交用户名/手机/微信号，密码登陆用户
 返回信息： 用户所属平台的唯一的openid，昵称，头像和更新时间等
 
-|请求参数|是否必须|说明|备注|
-|:-----------|:-----------:|:-----------:|
+| 参数|是否必须|说明|备注|
+|:--------|:--------:|:--------:|:--------:|
 |access_token| **required**| 调用接口必须提供access_token
 |username| **condtional required**| 用户名或手机号必须有
 |mobile| **condtional required**| 手机号或用户名必须有

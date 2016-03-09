@@ -66,8 +66,8 @@
 |username|**required**|用户名||
 
 
-| 返回参数|说明|备注|
-|:----------- |:-----------: |
+|返回参数|说明|备注|
+|:--------|:--------:|:--------:|:--------:|
 |info| 展示信息|操作成功时才返回|
 |status|状态码|操作成功时才返回(1表示存在，0表示不存在)|
 
@@ -100,14 +100,14 @@
 
 判断手机号是否已经存在。
 
-| 传入参数|是否必须|说明|备注|
-|:----------- | :-----------: |:-----------: ||
+|参数|是否必须|说明|备注|
+|:--------|:--------:|:--------:|:--------:|
 |access_token| **required**|调用接口必须提供access_token||
 |mobile|**required**|用户名||
 
 
 | 返回参数|说明|备注|
-|:----------- |:-----------: |
+|:-----------|:-----------:|||
 |info| 展示信息|操作成功时才返回|
 |status|状态码|操作成功时才返回(1表示存在，0表示不存在)|
 
@@ -140,8 +140,8 @@
 
 创建新用户，根据传入的参数创建新用户，成功则返回用户注册并登录后信息。失败返回相应错误信息。
 
-| 传入参数|是否必须|说明|备注|
-|:----------- | :-----------: |:-----------: ||
+|参数|是否必须|说明|备注|
+|:--------|:--------:|:--------:|:--------:|
 |access_token| **required**|调用接口必须提供access_token||
 |username|**optional**|用户名||
 |password|**required**|密码||
@@ -153,7 +153,7 @@
 |regurl|**optional**|用户注册来源页面url||
 
 | 返回参数|说明|备注|
-|:----------- |:-----------: |
+|:-----------|:-----------:|||
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -215,13 +215,13 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 用户忘记登录密码找回功能(调用该接口前必须完成用户合法性验证)
 
 |请求参数|是否必须 |说明  |备注|
-|:----------- | :-----------: |:-----------: ||
+|:--------|:--------:|:--------:|:--------:|
 |access_token|**required**| 调用接口必须提供access_token||
 |mobile|**required**| 用户注册的手机号||
 |newpassword |**optional**|新密码||
 
 |返回data参数说明| 说明|备注| 
-|:----------- |:-----------: 
+|:-----------|:-----------:||
 |message|错误信息|修改密码失败时才返回|
 |field|错误字段|修改密码失败时才返回|
 
@@ -252,7 +252,7 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |wx_sex|**condtional**|微信登录用户的微信性别|微信登录时同时传入用户名,密码,微信openid,且微信未绑定时则绑定该微信信息
 
 |返回data参数说明| 说明|备注| 
-|:----------- |:-----------: 
+|:-----------|:-----------:||
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -300,14 +300,14 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 根据传入的用户openid获取用户详细信息。
 
 | 参数|是否必须|说明|备注|
-|:----------- | :-----------: |:-----------: ||
+|:--------|:--------:|:--------:|:--------:|
 |access_token| **required**|调用接口必须提供access_token||
 |user_id|**required**|用户所属平台的唯一的openid||
 |state|**optional**|回调函数验证码||
 
 
 |返回data参数说明| 说明|备注| 
-|:----------- |:-----------: 
+|:-----------|:-----------:||
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |focus| 关注领域|操作成功时才返回|
@@ -352,14 +352,14 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 根据传入的用户openid获取用户所有相关详情信息。
 
 | 参数|是否必须|说明|备注|
-|:----------- | :-----------: |:-----------: ||
+|:--------|:--------:|:--------:|:--------:|
 |access_token| **required**|调用接口必须提供access_token||
 |user_id|**required**|用户所属平台的唯一的openid||
 |state|**optional**|回调函数验证码||
 
 
 |返回data参数说明| 说明|备注| 
-|:----------- |:-----------: 
+|:-----------|:-----------:||
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |focus| 关注领域|操作成功时才返回|
@@ -448,14 +448,14 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 根据传入的用户openid获取用户基本信息。
 
 | 参数|是否必须|说明|备注|
-|:----------- | :-----------: |:-----------: ||
+|:--------|:--------:|:--------:|:--------:|
 |access_token| **required**|调用接口必须提供access_token||
 |user_id|**required**|用户所属平台的唯一的openid||
 |state|**optional**|回调函数验证码||
 
 
 |返回data参数说明| 说明|备注| 
-|:----------- |:-----------: 
+|:-----------|:-----------:||
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -503,7 +503,7 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 返回信息： 用户的更新以后的基本信息
 
 |请求参数|是否必须 |说明  |备注|
-|:----------- | :-----------: |:-----------: ||
+|:--------|:--------:|:--------:|:--------:|
 |access_token|**required**| 调用接口必须提供access_token||
 |user_id|**required**| 用户针对该平台的唯一的openid||
 |nickname |**optional**|   昵称||
@@ -535,7 +535,7 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |blog_url |**optional**|   微博账号||
 
 |返回data参数说明| 说明|备注| 
-|:----------- |:-----------: 
+|:-----------|:-----------:||
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -580,7 +580,7 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 返回信息： 机构用户的更新以后的基本信息
 
 |请求参数|是否必须 |说明  |备注|
-|:----------- | :-----------: |:-----------: ||
+|:--------|:--------:|:--------:|:--------:|
 |access_token|**required**| 调用接口必须提供access_token||
 |user_id|**required**| 用户针对该平台的唯一的openid||
 |REF:USERS/UPDATE |**optional**|参考普通用户|**除以下额外参数以外，其他与普通用户所能传的参数一致**|
@@ -593,7 +593,7 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |auth_error |**optional**|   机构审核错误信息||
 
 |返回data参数说明| 说明|备注| 
-|:----------- |:-----------: 
+|:-----------|:-----------:||
 |nickname| 用户昵称|操作成功时才返回|
 |photo_url| 用户头像|操作成功时才返回|
 |authstatus| 用户实名状态|操作成功时才返回|
@@ -637,14 +637,14 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 用户登录密码修改功能
 
 |请求参数|是否必须 |说明  |备注|
-|:----------- | :-----------: |:-----------: ||
+|:--------|:--------:|:--------:|:--------:|
 |access_token|**required**| 调用接口必须提供access_token||
 |user_id|**required**| 针对该平台的唯一的openid||
 |newpassword |**optional**|新密码||
 |oldpassword |**optional**|原密码||
 
 |返回data参数说明| 说明|备注| 
-|:----------- |:-----------: 
+|:-----------|:-----------:|
 |message|错误信息|修改密码失败时才返回|
 |field|错误字段|修改密码失败时才返回|
 

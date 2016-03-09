@@ -142,7 +142,7 @@
 
 |参数|是否必须|说明|备注|
 |:--------|:--------:|:--------:|:--------:|
-|access_token| **required**|调用接口必须提供access_token||
+|access_token|**required**|调用接口必须提供access_token||
 |username|**optional**|用户名||
 |password|**required**|密码||
 |mobile|**required**|手机号|当用户名为空时默认手机号为用户名|
@@ -374,6 +374,38 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |qastatus| 用户问卷调查状态|操作成功时才返回|
 |state|回调验证码|操作成功时才返回|
 
+|invest_amount|投资规模|操作成功时才返回|
+|weixin|微信关注账号|操作成功时才返回|
+|project_invest_amount_start|单项目投资金额下限|操作成功时才返回|
+|project_invest_amount_end|单项目投资金额上限|操作成功时才返回|
+|company|所在公司名称|操作成功时才返回|
+|weixin_open_flag|微信账号是否公开，0不公开1公开|操作成功时才返回|
+|linkin|领英账号|操作成功时才返回|
+|blog_url|微博账号|操作成功时才返回|
+|position|所在公司职位|操作成功时才返回|
+|income|收入|操作成功时才返回|
+|resume|简历|操作成功时才返回|
+|invest_idea|投资理念|操作成功时才返回|
+|focus_city|关注城市|操作成功时才返回|
+|blog_url|微博账号|操作成功时才返回|
+|position|所在公司职位|操作成功时才返回|
+|bank_auth_status|银行认证情况|操作成功时才返回|
+|agent_company_flag|机构用户标识|操作成功时才返回|
+|invest_idea|投资理念|操作成功时才返回|
+|legal_name|法人姓名|操作成功时才返回|
+|card_no|银行卡号|操作成功时才返回|
+|contact|联系人|操作成功时才返回|
+|tel|公司电话|操作成功时才返回|
+|license_no|营业执照|操作成功时才返回|
+|license_url|营业执照文件地址|操作成功时才返回|
+|real_name|真实姓名|操作成功时才返回|
+|card_id|身份证号|操作成功时才返回|
+|card_photo_url|身份证图片地址|操作成功时才返回|
+|tel|公司电话|操作成功时才返回|
+|org_code|组织结构代码证号码|操作成功时才返回|
+|tax_code|税务登记证号码|操作成功时才返回|
+|card_type|个人信息认证卡类：身份证/台胞证|操作成功时才返回|
+
 ```
 {
   "code": 200,
@@ -514,7 +546,6 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |province|**optional**|  省||
 |city |**optional**|  市||
 |country |**optional**|   区||
-|describe |**optional**|   个人简介||
 |mobile |**optional**|  手机||
 |email |**optional**|  电子邮箱||
 |gender |**optional**|  性别||

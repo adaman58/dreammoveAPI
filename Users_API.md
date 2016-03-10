@@ -373,7 +373,6 @@ curl -d "access_token=ACCESS_TOKEN&username=USERNAME&password=PASSWORD&mobile=MO
 |authstatus| 用户实名状态|操作成功时才返回|
 |qastatus| 用户问卷调查状态|操作成功时才返回|
 |state|回调验证码|操作成功时才返回|
-
 |invest_amount|投资规模|操作成功时才返回|
 |weixin|微信关注账号|操作成功时才返回|
 |project_invest_amount_start|单项目投资金额下限|操作成功时才返回|
